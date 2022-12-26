@@ -24,7 +24,7 @@ jobs:
           command: |
             . venv/bin/activate
             flake8 --exclude=venv* --statistics
-            python3 manage.py test
+            python3 ./manage.py test
       - store_artifacts:
           path: test-reports/
           destination: python_app
